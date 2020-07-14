@@ -222,7 +222,8 @@ section.services .card-wrapper .card:hover h2 {
 
 section.freelancer {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(../images/camera.png));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../images/camera.png");
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
     padding-bottom: 14rem;
