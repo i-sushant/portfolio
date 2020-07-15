@@ -8,7 +8,12 @@ $(document).ready(function () {
     let hamburger = document.querySelector('.hamburger');
     let times = document.querySelector('.times');
     let mobileNav = document.querySelector('.mobile-nav');
-
+    let links = mobileNav.querySelectorAll("a");
+    Array.from(links).forEach(item => {
+        item.addEventListener('click', () => {
+            mobileNav.classList.remove('open');
+        })
+    })
     hamburger.addEventListener('click', () => {
         mobileNav.classList.add('open');
     });
